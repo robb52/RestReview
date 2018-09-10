@@ -1,0 +1,5 @@
+<%= simple_form_for @restaurant do |f| %>
+  <%= f.input :name, label: "Restaurant Name" %>
+  <%= f.input :description %>
+   <%= f.button :submit, class: "btn-outline-primary" %>
+<% end %>
