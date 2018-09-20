@@ -12,3 +12,289 @@
  *
  */
  @import "bootstrap";
+ @import url('https://fonts.googleapis.com/css?family=Acme|Arimo|Khula|Molengo');
+
+
+.logo {  
+  height: 125px;
+  padding: 3px;
+}
+
+.navbar.navbar-expand-lg {
+  border-bottom: 10px solid #638904;
+  border-top: 1px solid  #638904;
+}
+
+.nav.navbar {
+  font-family: Khula;
+  font-size: 16px; 
+}
+
+.nav.navbar:hover a {
+  color: #480999;
+  text-decoration: none;
+}
+
+.nav-signin {
+  font-family: Khula;
+  font-size: 16px; 
+}
+
+.nav-signin:hover a {
+  color: #480999;
+  text-decoration: none;
+}
+
+.navbar-brand {
+  font-family: Acme;
+  font-size: 50px; 
+}
+
+.navbar-brand:hover a{
+  color: #480999;
+  text-decoration: none; 
+}
+
+.nav-item.dropdown{
+  font-family: Khula;
+  font-size: 20px;
+}
+
+.nav-item.dropdown:hover {
+  color: #F635C4;
+}
+
+.nav-item.dropdown:hover a {
+  color: #480999;
+}
+
+.thumb {
+  height: 200px;  
+}
+
+.text.col {
+ padding: 10px;
+}
+
+.dropdown.list:hover {
+  font-family:Tahoma;
+  font-size: 25px;
+}
+
+.dropdown.list:hover a {
+  color: #480999;
+}
+
+.rest-info {
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  padding: 1.5em 1.25em;
+  margin: 20px;
+}
+
+.rest-name {
+  font-size: 3em;
+  font-family: Acme;
+}
+
+.avg-rate-title {
+  font-family: Khula;
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+
+.rest-descript {
+  font-family: Molengo;
+  padding-top: 5px;
+}
+
+.reviews.col-4 {
+  font-family: Acme;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  padding: 1.5em 1.25em;
+}
+
+.img.float-right {
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  padding: 1.5em 1.25em;
+  margin: 30px;
+}
+
+.review-section {
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+}
+
+/*.background {
+  background:url("pizzabackground.jpg");
+  background-size:cover; 
+}*/
+
+.btn.btn-outline-primary {
+  margin: 10px;
+}
+
+.btn.btn-outline-primary.btn-sm {
+  margin: 0px;
+  margin-bottom: 3px;
+}
+
+.new-rest {
+  font-family: Acme;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  padding: 1.5em 1.25em;
+}
+
+.edit-rest {
+  font-family: Acme;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  padding: 1.5em 1.25em;
+}
+
+.edit-review {
+  font-family: Acme;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  padding: 1.5em 1.25em;
+}
+
+.new-review {
+  font-family: Acme;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  padding: 1.5em 1.25em;
+}
+
+.signup {
+  font-family: Acme;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  padding: 1.5em 1.25em;
+}
+
+.login {
+  font-family: Acme;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  padding: 1.5em 1.25em;
+}
+
+.btn-group {
+  margin-top: 5px;
+}
+
+.smallbox {
+  width: 250px;
+  height: 250px;
+  background-color: black;
+  position: relative;
+ 
+
+  -webkit-transition: all 0.5s linear;
+  -webkit-transform-style: preserve - 3d;
+
+}
+
+.smallbox:hover {
+  -webkit-transform: rotateY(180deg);
+}
+
+.front {
+  
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  color: #fff;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.back {
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  color: #fff;
+  position: absolute;
+  backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+}
+
+h2 {
+  font-family: Acme;
+  font-size: 3.0em;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  /*transform: scale(1.1);*/  
+ -webkit-transform: rotateZ(-180deg);
+  -ms-transform: rotateZ(-180deg);
+  transform: rotateZ(-180deg);
+
+}
+
+.review-section {
+  word-wrap: break-word;
+   white-space: normal;
+}
+
+.rest-info {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.new-rest {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+
+
+
+

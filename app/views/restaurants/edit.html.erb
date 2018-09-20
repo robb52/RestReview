@@ -1,3 +1,22 @@
-<h2>Edit Restaurant</h2>
+<div class=" col-6 offset-3">
 
-<%= render 'form' %>
+  <div class="edit-rest">
+
+    <h2>Edit Restaurant</h2>
+
+    <%= simple_form_for @restaurant, :html => { :multipart => true } do |f| %>
+      <%= f.select :category_id, @categories %>
+      <p></p>
+      <%= f.file_field :restaurant_img %>
+      <%= f.input :name, label: "Restaurant Name" %>
+      <%= f.input :description %>
+      <%= f.button :submit, class: "btn-outline-primary" %>
+    <% end %>
+
+  </div>
+
+  <%= link_to "Back", root_path(@restaurant) %>
+
+</div>
+
+ 

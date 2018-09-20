@@ -1,6 +1,28 @@
-<% @restaurant.each do |restaurant| %>
-  <h2><%= link_to restaurant.name, restaurant_path(restaurant) %></h2>
-<% end %>
+<div class="container">
+  <h2 calss="current-category"><%= params[:category] %></h2>
 
-<%= link_to "Add Restaurant", new_restaurant_path %>
+  <% if @restaurant.count == 0 %>
+    <h3> Category Empty</h3>
+    <div class="embed-responsive embed-responsive-21by9">
+      <iframe class="embed-responsive-item" src="//www.youtube.com/embed/vedSJXebwY8" allowfullscreen></iframe>
+    </div>
+
+    <% else %>
+
+    <div class="row">
+      <% @restaurant.each do |restaurant| %>
+        <div class="col-md-3">
+          <div class="hvr-grow">
+            <a href="/restaurants/ <%= restaurant.id %>">
+              <%= image_tag restaurant.restaurant_img.url(:medium), class: "logo" %>
+            </a>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+  <% end %>
+</div>
+
+
 

@@ -1,6 +1,59 @@
-<h2><%= @restaurant.name %></h2>
-<h3><%= @restaurant.description %></h3>
+<div class="container">  
+  <div class="row">
+    <div class="img float-right">
+      <%= image_tag @restaurant.restaurant_img.url(:medium), class: "thumb" %>
+    </div>
 
-<%= link_to "Back", root_path(@restaurant) %>
-<%= link_to "Edit", edit_restaurant_path(@restaurant) %>
-<%= link_to "Delete", restaurant_path(@restaurant), method: :delete, data: { confrim: "Are you sure?"} %>
+    <div class="text col">
+      <div class="rest-info">
+        <h2 class="rest-name"><%= @restaurant.name %></h2>
+        <h4 class="avg-rate-title">Average Rating</h4>
+        <div class="average-rating" data-score=<%= @average_review %>></div>
+        <h5 class="rest-descript"><%= @restaurant.description %></h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="reviews col-4">
+    <h1>Reviews</h1>
+    <%= render @restaurant.reviews %>
+
+    <div>
+      <%= link_to "Add Review", new_restaurant_review_path(@restaurant), class: "btn btn-outline-primary" %>
+    </div>
+  </div>
+
+  <div class="btn-group">
+    <%= link_to "Back", root_path(@restaurant), class: "btn btn-outline-primary btn-sm" %>
+
+    <% if user_signed_in? %>
+
+      <% if @restaurant.user_id == current_user.id %>
+        <%= link_to "Edit", edit_restaurant_path(@restaurant), class: "btn btn-outline-primary btn-sm" %>
+        <%= link_to "Delete", restaurant_path(@restaurant),class: "btn btn-outline-primary btn-sm", method: :delete, data: { confrim: "Are you sure?"} %>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+
+<script>
+  $('.review-rating').raty({
+    readOnly: true,
+    score: function() {
+      return $(this).attr('data-score');
+    },
+    path: '/assets/'
+  });
+</script>
+
+<script>
+  $('.average-rating').raty({
+    readOnly: true,
+    path: '/assets/',
+    score: function() {
+      return $(this).attr('data-score')
+    },
+  });
+</script>
+   
+  
