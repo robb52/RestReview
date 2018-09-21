@@ -7,7 +7,7 @@
     <div class="text col">
       <div class="rest-info">
         <h2 class="rest-name"><%= @restaurant.name %></h2>
-        <h4 class="avg-rate-title">Average Rating</h4>
+        <h4 class="avg-rate-title">Eat It Average Rating</h4>
         <div class="average-rating" data-score=<%= @average_review %>></div>
         <h5 class="rest-descript"><%= @restaurant.description %></h5>
       </div>
@@ -30,7 +30,7 @@
 
       <% if @restaurant.user_id == current_user.id %>
         <%= link_to "Edit", edit_restaurant_path(@restaurant), class: "btn btn-outline-primary btn-sm" %>
-        <%= link_to "Delete", restaurant_path(@restaurant),class: "btn btn-outline-primary btn-sm", method: :delete, data: { confrim: "Are you sure?"} %>
+        <%= link_to "Delete", restaurant_path(@restaurant), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-outline-primary btn-sm" %>
       <% end %>
     <% end %>
   </div>

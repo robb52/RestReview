@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>The Review</title>
+
+    <title>Eat It</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <%= favicon_link_tag 'favicons/favicon.ico' %>
 
   </head>
 
@@ -16,7 +19,9 @@
 
     <%= render 'layouts/alerts' %>
 
-      <%= yield %>
+    <%= yield %>
+
+    <%= render 'shared/footer' %>
     
   </body>
 </html>

@@ -12,7 +12,7 @@
  *
  */
  @import "bootstrap";
- @import url('https://fonts.googleapis.com/css?family=Acme|Arimo|Khula|Molengo');
+ @import url('https://fonts.googleapis.com/css?family=Acme|Arimo|Khula|Molengo|Titan One');
 
 
 .logo {  
@@ -46,8 +46,14 @@
 }
 
 .navbar-brand {
-  font-family: Acme;
-  font-size: 50px; 
+  font-family: Titan One;
+  font-size: 60px; 
+  padding-left: 50px;
+  padding-right: 30px;
+}
+
+.navbar-brand a {
+  color: #E31C08;
 }
 
 .navbar-brand:hover a{
@@ -210,7 +216,7 @@
 }
 
 .btn-group {
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .smallbox {
@@ -218,8 +224,6 @@
   height: 250px;
   background-color: black;
   position: relative;
- 
-
   -webkit-transition: all 0.5s linear;
   -webkit-transform-style: preserve - 3d;
 
@@ -292,6 +296,11 @@ h2 {
 .new-rest {
   word-wrap: break-word;
   white-space: normal;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
 }
 
 
