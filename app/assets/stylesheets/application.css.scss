@@ -15,9 +15,10 @@
  @import url('https://fonts.googleapis.com/css?family=Acme|Arimo|Khula|Molengo|Titan One');
 
 
-.logo {  
+.logo { 
   height: 125px;
-  padding: 3px;
+  padding: 10px;
+  
 }
 
 .navbar.navbar-expand-lg {
@@ -27,7 +28,19 @@
 
 .nav.navbar {
   font-family: Khula;
-  font-size: 16px; 
+  font-size: 16px;
+}
+
+img.star-logo{
+  height: 40px;
+  margin-top: -10px;
+  margin-left: 20px;
+  margin-right: -20px;
+
+}
+img {
+  height: 17px;
+  padding-right: 15px;
 }
 
 .nav.navbar:hover a {
@@ -64,6 +77,8 @@
 .nav-item.dropdown{
   font-family: Khula;
   font-size: 20px;
+  margin-left: -30px;
+  margin-bottom: -20px;
 }
 
 .nav-item.dropdown:hover {
@@ -74,8 +89,9 @@
   color: #480999;
 }
 
-.thumb {
-  height: 200px;  
+img.thumb {
+  height: 170px; 
+  margin: 20px; 
 }
 
 .text.col {
@@ -133,7 +149,7 @@
   border-radius: 5px;
   box-shadow: 3px 3px 5px 6px #ccc;
   padding: 1.5em 1.25em;
-  margin: 30px;
+  margin: 40px;
 }
 
 .review-section {
@@ -257,9 +273,22 @@
 
 h2 {
   font-family: Acme;
-  font-size: 3.0em;
+  
   color: black;
-  padding-bottom: 20px;
+
+}
+
+h2.tag {
+ color: yellow;
+ text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+ font-size: 20px;
+ margin-left: 78px;
+ margin-top: -20px;
+ margin-bottom: -10px;
 }
 
 .hvr-grow {
