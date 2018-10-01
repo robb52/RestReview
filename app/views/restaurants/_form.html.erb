@@ -1,4 +1,4 @@
-<%= simple_form_for @restaurant, :html => { :multipart => true }  do |f| %>
+<%= simple_form_for @restaurant, html: { multipart: true }  do |f| %>
   <%= select_tag(:category_id, options_for_select(@categories), :prompt => "Select category") %>
   <p></p>
   <%= f.file_field :restaurant_img %>
