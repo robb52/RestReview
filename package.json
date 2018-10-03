@@ -1,5 +1,8 @@
 {
   "name": "RestReview",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "scripts": {
+    "start": "node"
+  }
 }

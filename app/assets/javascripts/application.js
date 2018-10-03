@@ -16,5 +16,3 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap
-//= require jquery.ui.widget
-//= require z.jquery.fileupload
