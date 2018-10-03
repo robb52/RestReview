@@ -81,5 +81,7 @@ test:
 production:
   <<: *default
   database: RestReview_production
+  adapter: postgresql
+  host: localhost
   username: RestReview
   password: <%= ENV['RESTREVIEW_DATABASE_PASSWORD'] %>
