@@ -101,9 +101,5 @@ Rails.application.configure do
       s3_region: ENV.fetch('AWS_REGION'),
     }
   }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 5ad10866a4ee3e109d2246366469d014807e9124
 end
